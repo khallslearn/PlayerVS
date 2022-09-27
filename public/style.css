@@ -1,0 +1,18 @@
+body {
+	background: #643A7A;
+}
+
+#container{
+    display: flex;
+    align-content: space-between;
+}
+
+#player2{
+    position: absolute;
+    left:420px;
+    border: 2px solid black;
+}
+
+#player1{
+    border: 2px solid black;
+}

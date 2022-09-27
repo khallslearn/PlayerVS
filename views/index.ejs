@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<title>Player vs Player</title>
+<!--STYLESHEET LINK-->
+<link rel="stylesheet" href="style.css">
+<!--GOOGLE FONT-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap" rel="stylesheet">
+<!--ICONS-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <h2>Who is better?</h2>
+    <div id="container">
+    <div id="player1">
+        <select id="select1"name="title">  
+            <% nbaTask.forEach(details => { %>   <option ><%= details.player_name %>
+            </option>  
+            <% }) %> 
+          </select>
+             <button id="btn1">Select</button>
+            <div class="todo-list-item-name"><h3>Name:</h3><span id="bringmename"><%= nbaTask.player_name %></span></div>
+            <div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints"><%= nbaTask.pts %></span></div>
+            <div class="todo-list-item-assist"><h3>Assist:</h3><span id="bringmeassist"><%= nbaTask.ast %></span></div>
+    </div>
+    <div id="player2">
+        <select id="select2"name="title">  
+            <% nbaTask.forEach(details => { %>   <option ><%= details.player_name %>
+            </option>  
+            <% }) %> 
+          </select>
+             <button id="btn2">Select</button>
+            <div class="todo-list-item-name"><h3>Name:</h3><span id="bringmename2"><%= nbaTask.player_name %></span></div>
+            <div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints2"><%= nbaTask.pts %></span></div>
+            <div class="todo-list-item-assist"><h3>Assist:</h3><span id="bringmeassist2"><%= nbaTask.ast %></span></div>
+    </div>
+    </div>
+
+    <script>
+
+let namey = document.querySelector("#bringmename")
+let points = document.querySelector("#bringmepoints")
+let assist =  document.querySelector("#bringmeassist")
+let namey2 = document.querySelector("#bringmename2")
+let points2 = document.querySelector("#bringmepoints2")
+let assist2 =  document.querySelector("#bringmeassist2")
+
+let btn = document.querySelector("#btn1")
+let btn2 = document.querySelector("#btn2")
+
+btn.addEventListener("click",()=>{
+ let lettuce = document.querySelector("#select1").value;
+ namey.innerText = `${lettuce}`;
+points.innerText =  Math.floor(Math.random() * 300 + 1)/10
+assist.innerText =  Math.floor(Math.random() * 120 + 1)/10
+    
+
+
+})
+
+btn2.addEventListener("click",()=>{
+ let lettuce = document.querySelector("#select2").value;
+ namey2.innerText = `${lettuce}`;
+points2.innerText =  Math.floor(Math.random() * 300 + 1)/10
+assist2.innerText =  Math.floor(Math.random() * 120 + 1)/10
+    
+
+
+})
+    </script>
+</body>
