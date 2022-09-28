@@ -9,7 +9,6 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const mongoose = require("mongoose");
 const connectDB = require("./config/database");
-//const TodoTask = require("./models/TodoTask");
 const homeRoutes = require("./routes/home")
 require('dotenv').config({path: './config/.env'})
 
