@@ -18,20 +18,13 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
     <div id="container">
   
         <table class="table table-hover" id="player1">
-            <form action="/search" method="GET">
-            <th scope="col" class="table-info"><select id="select1"name="player_name">  
-            <% data.forEach(details => { %>   <option ><%= details.player_name %>
-            </option>  
-            <% }) %> 
-      
-          </select>
-          <button type="submit" class="btn btn-dark" id="btn1">Select</button>
-        </form> 
-        </th>
-             <tr class="table-info"> <td><h3>Name:</h3><span id="bringmename"><%= data.player_name %></span></td></tr>
-             <tr class="table-info"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints"><%= data.pts %></span></div></td></tr>
 
-             
+      
+        <% data.forEach(details => { %>
+             <tr class="table-info"> <td><h3>Name:</h3><span id="bringmename"><%= details.player_name %></span></td></tr>
+             <tr class="table-info"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints"><%= details.pts %></span></div></td></tr>
+
+             <% }) %> 
         </table>
     
         <table class="table table-hover" id="player2">

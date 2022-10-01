@@ -4,21 +4,21 @@ player_name: {
     type: String,
     required: true
 },
-team_abbreviation: {
+/*team_abbreviation: {
     type: String,
     required: true
-},
+},*/
 pts: {
     type: Number,
     required: true
 },
-reb: {
+/*reb: {
     type: Number,
     required: true
 },
 ast: {
     type: Number,
     required: true
-}
+}*/
 })
 module.exports = mongoose.model('nbaTask',nbaSchema,'Stats');

@@ -7,6 +7,7 @@ const homeController = require('../controllers/home')
 
 router.get('/', homeController.getIndex)
 //router.post('/', homeController.createTask)
+router.get("/search",homeController.searchTask)
 
 
 module.exports = router
