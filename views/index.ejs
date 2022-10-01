@@ -14,7 +14,7 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
 
 <body>
 
-    <button> <a href="/">reset</a>t</button>
+    <button> <a href="/">reset</a></button>
     <div id="container">
   
         <table class="table table-hover" id="player1">
@@ -26,72 +26,40 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
       
           </select>
           <button type="submit" class="btn btn-dark" id="btn1">Select</button>
-        </form> 
+        
+
         </th>
-             <tr class="table-info"> <td><h3>Name:</h3><span id="bringmename"><%= data.player_name %></span></td></tr>
-             <tr class="table-info"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints"><%= data.pts %></span></div></td></tr>
+             <tr class="table-info"> <td><h3>Name:</h3><span id="bringmename"></span></td></tr>
+             <tr class="table-info"><td><div class="todo-list-item-points"><h3>Team:</h3><span id="bringmepoints"></span></div></td></tr>
+             <tr class="table-info"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints"></span></div></td></tr>
+             <tr class="table-info"><td><div class="todo-list-item-points"><h3>Assist:</h3><span id="bringmepoints"></span></div></td></tr>
+             <tr class="table-info"><td><div class="todo-list-item-points"><h3>Rebounds:</h3><span id="bringmepoints"></span></div></td></tr>
+
 
              
         </table>
     
         <table class="table table-hover" id="player2">
 
-            <th scope="col" class="table-danger"><select id="select2"name="title">  
+
+            <th scope="col" class="table-danger"><select id="select2"name="player_name2">  
             <% data.forEach(details => { %>   <option ><%= details.player_name %>
             </option>  
             <% }) %> 
           </select>
-          <button type="button" class="btn btn-dark" id="btn2">Select</button>
+        </form> 
+
         </th>
-             <tr class="table-danger"> <td><h3>Name:</h3><span id="bringmename2"><%= data.player_name %></span></td></tr>
-             <tr class="table-danger"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints2"><%= data.pts %></span></div></td></tr>
-             <tr class="table-danger"> <td><div class="todo-list-item-assist"><h3>Assist:</h3><span id="bringmeassist2"><%= data.ast %></span></div></td></tr>
+             <tr class="table-danger"> <td><h3>Name:</h3><span id="bringmename2"></span></td></tr>
+             <tr class="table-danger"><td><div class="todo-list-item-points"><h3>Team:</h3><span id="bringmepoints2"></span></div></td></tr>
+             <tr class="table-danger"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints2"></span></div></td></tr>
+             <tr class="table-danger"><td><div class="todo-list-item-points"><h3>Assist:</h3><span id="bringmepoints2"></span></div></td></tr>
+             <tr class="table-danger"><td><div class="todo-list-item-points"><h3>Rebounds:</h3><span id="bringmepoints2"></span></div></td></tr>
+
+           
         </table>
 
-    
+
     </div>
 
-    
-    <script>
-
-let namey = document.querySelector("#bringmename")
-let points = document.querySelector("#bringmepoints")
-let assist =  document.querySelector("#bringmeassist")
-let namey2 = document.querySelector("#bringmename2")
-let points2 = document.querySelector("#bringmepoints2")
-let assist2 =  document.querySelector("#bringmeassist2")
-
-let btn = document.querySelector("#btn1")
-let btn2 = document.querySelector("#btn2")
-async function getInfo(){
-
-}
-/*btn.addEventListener("click",()=>{
-    async function getInfo(e){
-        e.preventDefault()
-        const res = await fetch('http://localhost:8000/',
-        {
-            method: "GET"
-        })
-        console.log(res)
-}
- let lettuce = document.querySelector("#select1").value;
- namey.innerText = `${lettuce}`;
-points.innerText =  Math.floor(Math.random() * 300 + 1)/10
-assist.innerText =  Math.floor(Math.random() * 120 + 1)/10
-    
-
-
-
-
-btn2.addEventListener("click",()=>{
- let lettuce = document.querySelector("#select2").value;
- namey2.innerText = `${lettuce}`;
-points2.innerText =  Math.floor(Math.random() * 300 + 1)/10
-assist2.innerText =  Math.floor(Math.random() * 120 + 1)/10
-    
-
-
-})})*/
-    </script>
 </body>
