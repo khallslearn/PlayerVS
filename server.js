@@ -6,7 +6,7 @@
 //Declare Variables
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT;
 const mongoose = require("mongoose");
 const connectDB = require("./config/database");
 const homeRoutes = require("./routes/home")
