@@ -14,14 +14,13 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
 
 <body>
 
-    <button> <a href="/">reset</a></button>
     <div id="container">
   
         <table class="table table-hover" id="player1">
 
       
         
-             <tr class="table-info"> <td><h3>Name:</h3><span id="bringmename"><%= nbaTask.player_name %></span></td></tr>
+             <tr class="table-info"> <td><h3>Name:</h3><span id="bringmename"><%= nbaTask.player_name %> <button  class="bn632-hover bn25"> <a href="/">reset</a></button></span></td> </tr>
              <tr class="table-info"><td><div class="todo-list-item-points"><h3>Team:</h3><span id="bringmepoints"><%= nbaTask.team_abbreviation %></span></div></td></tr>
              <tr class="table-info"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints"><%= nbaTask.pts %></span></div></td></tr>
              <tr class="table-info"><td><div class="todo-list-item-points"><h3>Assist:</h3><span id="bringmepoints"><%= nbaTask.ast %></span></div></td></tr>
