@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8000;
 const mongoose = require("mongoose");
 const connectDB = require("./config/database");
 const homeRoutes = require("./routes/home")
-require('dotenv').config({path: './config/.env'})
+require('dotenv').config({path:'config.env'})
 
 connectDB()
 
