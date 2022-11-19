@@ -12,11 +12,13 @@
 integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
-<body>
-<h1>Player 1</h1>
+<body >
+
+
   <div id="container" >
   
         <table class="table table-hover" id="player1">
+          
             <form action="/search" method="GET">
             <th scope="col" class="table-info"><select id="select1"name="player_name">  
             <% data.forEach(details => { %>   <option ><%= details.player_name %>
@@ -28,6 +30,7 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
         
 
         </th>
+        
              <tr class="table-info"> <td><h3>Name:</h3><span id="bringmename"></span></td></tr>
              <tr class="table-info"><td><div class="todo-list-item-points"><h3>Team:</h3><span id="bringmepoints"></span></div></td></tr>
              <tr class="table-info"><td><div class="todo-list-item-points"><h3>Points:</h3><span id="bringmepoints"></span></div></td></tr>
