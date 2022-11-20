@@ -1,6 +1,5 @@
-body {
-	background: #643A7A;
-
+#btn1{
+background-color: #2b82ce;
 }
 #nba{
   height: 20px;
@@ -22,7 +21,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
-    background-color: #c4dcf2;
+    background-color: white;
     border: #000 3px solid;
 }
 #player2{
@@ -79,7 +78,10 @@ body {
       #2b5876,
       #4e4376
     );
-    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    color: white;
+    position:absolute;
+    left:550px;
+    top: 130px
   }
 
 @charset "UTF-8";/*!
